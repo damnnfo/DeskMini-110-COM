@@ -3,6 +3,7 @@
 https://pan.baidu.com/s/1c2JHlc8
 
 操作流程简述：
+
 如果你的bios是7.20或7.20以下，请先升级至7.20版，备份好自己的BIOS设置后恢复出厂设置；
 再用AFUWIN备份主板的BIOS region，接着用MMTool或UEFITool打开添加CFL处理器微码，替换1073版GOP、1054版VBIOS后保存ROM；
 然后用AFUWIN刷修改后的ROM即可，这样是相当安全的操作（只动到BIOS region）。
