@@ -2,14 +2,20 @@
 已刷机测试可以正常启动进系统（上的是i3-7100，手头没有8100），如有风险请自行承担。
 https://pan.baidu.com/s/1c2JHlc8
 
-操作步骤
-解压缩VBIOS_and_BSF.7z，安装BMP；解压缩AfuWin。
-提取Cfl的微码（通用）添加到720 bios，提取720的vbios后用BMP提取ssf再合并生成1054版的VBIOS，替换1073版的GOP（通用）和1054版的VBIOS（专用版）。
-730的ME已经是11.8版，smxdiy的教程说ME要11.6～11.7之间的版本，而720的ME版本是11.6；所以要么直接在720版BIOS上修改，要么提取720的11.6版ME替换730版BIOS的ME。
-建议在bios版本为7.20的deskmini上操作。
+操作流程简述：
+如果你的bios是7.20或7.20以下，请先升级至7.20版，备份好自己的BIOS设置后恢复出厂设置；
+再用AFUWIN备份主板的BIOS region，接着用MMTool或UEFITool添加CFL处理器微码，替换1073版GOP、1054版VBIOS后保存ROM；
+然后用AFUWIN刷修改后的ROM即可，这样是相当安全的操作。
 
+如果你的bios是7.30版，额外需要解锁me region，7.30版的ME是11.8.50.3425可能不支持在100/200系主板用CFL处理器在微码识别后ME断电关机，
+7.20版的ME是11.6.0.1126不会有上面的问题。
+7.30版的操作步骤跟7.20版是一样的，只是后面还需要人工解锁ME region，再从7.20版BIOS提取旧版ME用Intel FPT等工具导入。
+
+
+具体操作步骤：
 A）下载同品牌Z370主板的BIOS，用MMTool_5.07打开并提取Cfl处理器的微码—06EB
-CPU Patch选中微码->Patch file输出文件名06EB.bin->Extract a Patch Data->Apply
+CPU Patch->Patch file输出文件名06EB.bin->Extract a Patch Data->Apply
+UEFITool
 
 B）下载deskmini的BIOS 7.20版。用MMTool_5.07打开bios rom，在CPU Patch选中06E3微码->Delete a Patch Data->Apply删除对Skl处理器的支持（腾出空间），再插入刚才导出的06EB.bin添加对Cfl处理器的支持（Insert a Patch Data->Apply）；另存为H11STXC7.20mod.rom
 
