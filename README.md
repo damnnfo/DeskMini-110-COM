@@ -8,10 +8,12 @@ https://pan.baidu.com/s/1c2JHlc8
 730的ME已经是11.8版，smxdiy的教程说ME要11.6～11.7之间的版本，而720的ME版本是11.6；所以要么直接在720版BIOS上修改，要么提取720的11.6版ME替换730版BIOS的ME。
 建议在bios版本为7.20的deskmini上操作。
 
-A）        下载同品牌Z370主板的BIOS，用MMTool_5.07打开并提取Cfl处理器的微码—06EB
+A）下载同品牌Z370主板的BIOS，用MMTool_5.07打开并提取Cfl处理器的微码—06EB
 CPU Patch选中微码->Patch file输出文件名06EB.bin->Extract a Patch Data->Apply
-B）        下载deskmini的BIOS 7.20版。用MMTool_5.07打开bios rom，在CPU Patch选中06E3微码->Delete a Patch Data->Apply删除对Skl处理器的支持（腾出空间），再插入刚才导出的06EB.bin添加对Cfl处理器的支持（Insert a Patch Data->Apply）；另存为H11STXC7.20mod.rom
-C）        用UEFITool_0.22.1打开deskmini的原版bios H11STXC7.20.rom，ctrl+f->GUID搜索VBIOS模块（C5A4306E-E247-4ECD-A9D8-5B1985D3DCDA），右键选择extract body...保存为vbios1039.bin （这里版本号可用WinHex打开查看）
+
+B）下载deskmini的BIOS 7.20版。用MMTool_5.07打开bios rom，在CPU Patch选中06E3微码->Delete a Patch Data->Apply删除对Skl处理器的支持（腾出空间），再插入刚才导出的06EB.bin添加对Cfl处理器的支持（Insert a Patch Data->Apply）；另存为H11STXC7.20mod.rom
+
+C）用UEFITool_0.22.1打开deskmini的原版bios H11STXC7.20.rom，ctrl+f->GUID搜索VBIOS模块（C5A4306E-E247-4ECD-A9D8-5B1985D3DCDA），右键选择extract body...保存为vbios1039.bin （这里版本号可用WinHex打开查看）
 D）        用BMP（Intel® Binary Modification Program）打开vbios1039.bin（二进制数据）和skl_1039.bsf（对应的脚本，从VBIOS_and_BSF.7z中提取），按Menu -> "BIOS Setting -> Save All" -> 'transfer.ssf'操作另存为transfer.ssf
 E）        用文本编辑器打开（例如EmEditor）打开transfer.ssf，找到“STRING $Signon Intel(R) SKL/KBL Mobile/Desktop PCI Accelerated SVGA BIOS\r\nBuild Number: 1039 PC 14.34  03/18/2016  02:56:01\r\nDECOMPILATION OR DISASSEMBLY PROHIBITED\r\n”这一行并删除，保存
 F）        用BMP打开skl_1054.dat和skl_1054.bsf（从VBIOS_and_BSF.7z中提取），按Menu -> "BIOS Setting -> Apply All" -> 'transfer.ssf' and save, example 'vbios_new.dat'操作用之前的transfer.ssf合并覆盖，另存为vbios1054.bin
