@@ -1,4 +1,4 @@
-因为我自己用deskmini，就动手改了7.2版的bios（支持Cfl处理器和核显），
+因为我自己用deskmini，就动手改了7.2和7.3版的bios（支持Cfl处理器和核显），
 已刷机测试可以正常启动进系统（我用的是i3-7100，没有买8100），如有风险请自行承担。
 https://pan.baidu.com/s/1c2JHlc8
 
@@ -15,18 +15,21 @@ https://pan.baidu.com/s/1c2JHlc8
 
 具体操作步骤：
 
-A）用MMTool修改处理器微码，详细见wiki--修改处理器微码，添加对CFL处理器的支持
+A）用MMTool修改处理器微码，详细见wiki--02 修改处理器微码，添加对CFL处理器的支持
 
-B）按wiki--合成新版VBIOS来生成1054版的VBIOS，另存为vbios1054.bin
+B）按wiki--03 合成新版VBIOS来生成1054版的VBIOS，另存为vbios1054.bin
 
 C）用UEFITool_0.22.1打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-1454-41F2-A6D3-61D1333E8CB4）即GOP模块，
    找到后选中，右键Replace body…选择Intel Skl-Kbl-Cfl GOP 9.0.1073.bin（网盘里有分享）替换；
    接着Ctrl+F搜索GUID（C5A4306E-E247-4ECD-A9D8-5B1985D3DCDA）即VBIOS模块，
    找到后选中，右键Replace body…选择刚才的vbios1054.bin替换，保存H11STXC7.20mod.rom
    
-D）如果是7.30版BIOS，还需要解锁ME region，降级ME FW，详细见wiki--ME unlock降级   
+D）如果是7.30版BIOS，还需要解锁ME region，降级ME FW，详细见wiki--04 ME unlock降级   
 
 至此完成H110主板对Cfl处理器的识别、核显支持的BIOS修改操作。
+
+建议按照上面的操作流程用AFUWIN刷BIOS region；
+想用InstantFlash刷完整BIOS的话，需要先用UBU 1.6工具运行UBU.bat自动去除安全校验模块才可以。
 
 
 
