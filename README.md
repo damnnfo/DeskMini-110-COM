@@ -13,25 +13,17 @@ https://pan.baidu.com/s/1c2JHlc8
 
 
 具体操作步骤：
-A）下载同品牌Z370主板的BIOS，用MMTool_5.07打开并提取Cfl处理器的微码—06EB
-CPU Patch->Patch file输出文件名06EB.bin->Extract a Patch Data->Apply
-UEFITool
+A）用MMTool修改处理器微码，详细见wiki--修改处理器微码，添加对CFL处理器的支持
 
-B）下载deskmini的BIOS 7.20版。用MMTool_5.07打开bios rom，在CPU Patch选中06E3微码->Delete a Patch Data->Apply删除对Skl处理器的支持（腾出空间），再插入刚才导出的06EB.bin添加对Cfl处理器的支持（Insert a Patch Data->Apply）；另存为H11STXC7.20mod.rom
+B）按wiki--合成新版VBIOS来生成1054版的VBIOS，另存为vbios1054.bin
 
-C）用UEFITool_0.22.1打开deskmini的原版bios H11STXC7.20.rom，ctrl+f->GUID搜索VBIOS模块（C5A4306E-E247-4ECD-A9D8-5B1985D3DCDA），右键选择extract body...保存为vbios1039.bin （这里版本号可用WinHex打开查看）
-
-D）用BMP（Intel® Binary Modification Program）打开vbios1039.bin（二进制数据）和skl_1039.bsf（对应的脚本，从VBIOS_and_BSF.7z中提取），按Menu -> "BIOS Setting -> Save All" -> 'transfer.ssf'操作另存为transfer.ssf
-
-E）用文本编辑器打开（例如EmEditor）打开transfer.ssf，找到“STRING $Signon Intel(R) SKL/KBL Mobile/Desktop PCI Accelerated SVGA BIOS\r\nBuild Number: 1039 PC 14.34  03/18/2016  02:56:01\r\nDECOMPILATION OR DISASSEMBLY PROHIBITED\r\n”这一行并删除，保存
-
-F）用BMP打开skl_1054.dat和skl_1054.bsf（从VBIOS_and_BSF.7z中提取），按Menu -> "BIOS Setting -> Apply All" -> 'transfer.ssf' and save, example 'vbios_new.dat'操作用之前的transfer.ssf合并覆盖，另存为vbios1054.bin
-
-G）用UEFITool_0.22.1打开H11STXC7.20mod.rom，ctrl+f搜索GOP模块（380B6B4F-1454-41F2-A6D3-61D1333E8CB4）和VBIOS模块（C5A4306E-E247-4ECD-A9D8-5B1985D3DCDA），右键Replace body…分别选择Intel Skl-Kbl-Cfl GOP 9.0.1073.bin（网盘里有分享）替换、选择vbios1054.bin替换后，保存H11STXC7.20mod.rom
+C）用UEFITool_0.22.1打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-1454-41F2-A6D3-61D1333E8CB4）即GOP模块，
+   找到后选中，右键Replace body…选择Intel Skl-Kbl-Cfl GOP 9.0.1073.bin（网盘里有分享）替换；
+   接着Ctrl+F搜索GUID（C5A4306E-E247-4ECD-A9D8-5B1985D3DCDA）即VBIOS模块，
+   找到后选中，右键Replace body…选择刚才的vbios1054.bin替换，保存H11STXC7.20mod.rom
 
 至此完成H110主板对Cfl处理器的识别、核显支持的BIOS修改操作。
-因为BIOS空间有限，只能存放两个处理器微码，修改后的BIOS只支持Kbl7代和Cfl8代、不支持Skl6代。
-先将deskmini的bios更新到官方7.20版，再用网盘里的AfuWin刷修改后的bios（同版本）。
+
 
 
 
