@@ -13,6 +13,7 @@ https://pan.baidu.com/s/1c2JHlc8
 
 
 具体操作步骤：
+
 A）用MMTool修改处理器微码，详细见wiki--修改处理器微码，添加对CFL处理器的支持
 
 B）按wiki--合成新版VBIOS来生成1054版的VBIOS，另存为vbios1054.bin
@@ -21,6 +22,8 @@ C）用UEFITool_0.22.1打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-145
    找到后选中，右键Replace body…选择Intel Skl-Kbl-Cfl GOP 9.0.1073.bin（网盘里有分享）替换；
    接着Ctrl+F搜索GUID（C5A4306E-E247-4ECD-A9D8-5B1985D3DCDA）即VBIOS模块，
    找到后选中，右键Replace body…选择刚才的vbios1054.bin替换，保存H11STXC7.20mod.rom
+   
+D）如果是7.30版BIOS，需要解锁ME region，降级ME FW，详细见wiki--   
 
 至此完成H110主板对Cfl处理器的识别、核显支持的BIOS修改操作。
 
