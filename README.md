@@ -2,17 +2,6 @@
 已刷机测试可以正常启动进系统（上的是i3-7100，手头没有8100），如有风险请自行承担。
 https://pan.baidu.com/s/1c2JHlc8
 
-背景介绍
-1）        MMTool_5.07修改版， Win10下菜单正常显示（原版因为兼容性问题，在Win10系统菜单显示不完整）—用于修改AMI BIOS的官方工具
-2）        UEFITool_0.22.1，图形化BIOS工具—实现数据可视化和编辑的映像文件输入
-UEFI 全称为 unified extensible firmware interface（统一可扩展固件接口）
-3）        Intel® Binary Modification Program 2.67e PV—官方的二进制修改工具
-4）        VBIOS_and_BSF.7z—各版本的VBIOS数据文件和对应的脚本文件
-5）        MicroCode微码—通用文件，定义分别是06E3 Sky lake、06E9 Kaby lake、06EB Coffee lake
-可用CPU-Z查看，6代表系列、E代表型号、9代表步进
-6）        UEFI GOP(Graphic Output Protocol)，图形输出协议驱动程序，通用
-7）        VBIOS 视频BIOS，核显iGPU用，不通用（不同主板显卡输出接口不同）
-
 操作步骤
 解压缩VBIOS_and_BSF.7z，安装BMP；解压缩AfuWin。
 提取Cfl的微码（通用）添加到720 bios，提取720的vbios后用BMP提取ssf再合并生成1054版的VBIOS，替换1073版的GOP（通用）和1054版的VBIOS（专用版）。
