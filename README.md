@@ -10,7 +10,7 @@ https://pan.baidu.com/s/1c2JHlc8
 
 如果你的bios是7.30版还需要解锁me region，7.30版的ME是11.8.50.3425、可能不支持在100系主板上用CFL处理器，据说微码识别CFL后ME会自动断电关机，
 而7.20版的ME固件是11.6.0.1126，就不会有上面的问题。
-7.30版的操作步骤前面跟7.20版是一样的，只是后面还需要人工解锁ME region，再从7.20版BIOS提取旧版ME用Intel FPT等工具导入。
+BIOS 7.30版的请先解锁ME降级，详细见wiki--04 ME unlock降级。
 
 
 具体操作步骤：
@@ -24,11 +24,9 @@ C）用UEFITool_0.22.1打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-145
    接着Ctrl+F搜索GUID（C5A4306E-E247-4ECD-A9D8-5B1985D3DCDA）即VBIOS模块，
    找到后选中，右键Replace body…选择刚才的vbios1054.bin替换，保存H11STXC7.20mod.rom
    
-D）如果是7.30版BIOS，还需要解锁ME region，降级ME FW，详细见wiki--04 ME unlock降级   
-
 至此完成H110主板对Cfl处理器的识别、核显支持的BIOS修改操作。
 
-建议按照上面的操作流程用AFUWIN刷BIOS region；
+建议按照上面的操作流程用AFUWIN刷BIOS region，AFUWIN里不要选自动重启、万一操作出错还能补救；
 想用InstantFlash刷完整BIOS的话，需要先用UBU 1.6工具运行UBU.bat自动去除安全校验模块才可以。
 
 
