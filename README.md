@@ -4,7 +4,7 @@ https://pan.baidu.com/s/1c2JHlc8
 
 操作流程简述：
 
-用UBU去除7.20修改版ROM的安全校验，接着解锁ME确认后（进BIOS查看ME版本是否为0.0.0.0），再用InstantFlash刷修改的BIOS应该是最快最简单的方法。
+用UBU去除7.20修改版ROM的安全校验，接着解锁ME确认后，再用InstantFlash刷修改的BIOS应该是最快最简单的方法。
 
 
 
