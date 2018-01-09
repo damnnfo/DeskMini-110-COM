@@ -28,7 +28,7 @@ C）用UEFITool_0.22.1打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-145
 
 接着用AFUWIN刷修改好的BIOS，AFUWIN里不要选自动重启、万一操作出错还能补救；
 
-想用InstantFlash刷的，需要先用UBU 1.6工具运行UBU.bat自动去除安全校验模块才可以。
+如果用InstantFlash刷修改的ROM，需要先用UBU 1.6工具运行UBU.bat自动去除安全校验模块才可以。
 
 
 
