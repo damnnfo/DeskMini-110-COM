@@ -26,7 +26,7 @@ C）用UEFITool_0.22.1打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-145
    
 至此完成H110主板对Cfl处理器的识别、核显支持的BIOS修改操作。
 
-建议按照上面的操作流程用AFUWIN刷BIOS region，AFUWIN里不要选自动重启、万一操作出错还能补救；
+接着用AFUWIN刷修改好的BIOS，AFUWIN里不要选自动重启、万一操作出错还能补救；
 想用InstantFlash刷完整BIOS的话，需要先用UBU 1.6工具运行UBU.bat自动去除安全校验模块才可以。
 
 
