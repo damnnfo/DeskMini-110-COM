@@ -3,5 +3,5 @@ OROM VBIOS SKL-KBL - 1054
 9.0.1073 GOP Driver
 
 2 - Update Intel CPU MicroCode
-Kabylake   CPUID 0906E9 - 7C
-Coffeelake CPUID 0906EB - 72
+Kabylake   CPUID 0906E9 - 80
+Coffeelake CPUID 0906EB - 80
