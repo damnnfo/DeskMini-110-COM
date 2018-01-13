@@ -4,10 +4,14 @@ https://pan.baidu.com/s/1c2JHlc8
 
 操作流程简述：
 
+Plan A
+
 用UBU去除7.20修改版ROM的安全校验，接着解锁ME确认后，再用InstantFlash刷修改好的7.20 BIOS应该是最快最简单的方法。
 该方法已由吧友测试通过，降级ME和修改BIOS一步到位。
 
-当然想更安全的话，解锁ME确认后，再用InstantFlash刷官方7.20 BIOS，重启确认ME降级是否成功；
+Plan B
+
+还是不放心的话，解锁ME确认后，再用InstantFlash刷官方7.20 BIOS，重启确认ME降级是否成功；
 
 接着按7.20版的教程用AFUWIN刷修改好的7.20 BIOS也可以。
 
