@@ -8,7 +8,8 @@ https://pan.baidu.com/s/1c2JHlc8
 再用AFUWIN备份主板的BIOS region，接着用MMTool或UEFITool打开添加CFL处理器微码，替换1073版GOP、1054版VBIOS后保存ROM；
 然后用AFUWIN刷修改后的ROM即可，这样是相当安全的操作（只动到BIOS region）。
 
-如果你的bios是7.30版还需要解锁ME，7.30版的ME是11.8.50.3425不支持在100系主板上用CFL处理器，据说识别CFL后ME会自动断电关机，
+
+如果你的bios是7.30版还需要解锁ME，7.30版的ME是11.8.50.3425不支持在100系主板上用CFL处理器，据说识别CFL后ME会让主板自动断电关机，
 而7.20版的ME固件是11.6.0.1126就不会有上面的问题。解锁ME教程请跳转wiki--04 ME unlock降级。
 
 
