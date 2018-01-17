@@ -19,7 +19,7 @@ A）用MMTool修改处理器微码，详细见wiki--02 修改处理器微码，�
 
 B）按wiki--03 合成新版VBIOS来生成1054版的VBIOS，另存为vbios1054.bin
 
-C）用UEFITool_0.22.1打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-1454-41F2-A6D3-61D1333E8CB4）即GOP模块，
+C）用UEFITool打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-1454-41F2-A6D3-61D1333E8CB4）即GOP模块，
    找到后选中，右键Replace body…选择Intel Skl-Kbl-Cfl GOP 9.0.1073.bin（网盘里有分享）替换；
    接着Ctrl+F搜索GUID（C5A4306E-E247-4ECD-A9D8-5B1985D3DCDA）即VBIOS模块，
    找到后选中，右键Replace body…选择刚才的vbios1054.bin替换，保存H11STXC7.20mod.rom
@@ -28,8 +28,4 @@ C）用UEFITool_0.22.1打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-145
 
 接着用AFUWIN刷修改好的BIOS，AFUWIN里不要选自动重启、万一操作出错还能补救；
 
-如果用InstantFlash刷修改的ROM，需要先用UBU 1.6工具运行UBU.bat自动去除安全校验模块才可以。
-
-
-
-
+如果用InstantFlash刷修改过的BIOS ROM，需要先用UBU 1.6工具运行UBU.bat自动去除安全校验才可以。
