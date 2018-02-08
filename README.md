@@ -4,8 +4,8 @@ https://pan.baidu.com/s/1c2JHlc8
 
 大众教程：下载修改好的BIOS，解压缩放到U盘，开机进BIOS确认BIOS版本，
 
-         7.2或以下版本直接用instant flash刷带np（去除安全校验）的ROM即可；
-         7.3或更高版本的，请按wiki--04 ME unlock降级解锁ME，再用instant flash刷带np（去除安全校验）的ROM。
+    7.2或以下版本直接用instant flash刷带np（去除安全校验）的ROM即可；
+    7.3或更高版本的，请按wiki--04 ME unlock降级解锁ME，再用instant flash刷带np（去除安全校验）的ROM。
 
 
 下面是给想知道改了哪些地方，怎么修改的，为什么这样操作的同学看的。
@@ -16,8 +16,9 @@ https://pan.baidu.com/s/1c2JHlc8
     再用AFUWIN备份主板的BIOS region，接着用MMTool或UEFITool打开添加CFL处理器微码，替换1074版GOP、1054版VBIOS后保存ROM；
     然后用AFUWIN刷修改后的ROM即可，这样是相当安全的操作（只动到BIOS region）。
 
-    如果你的bios是7.30版还需要解锁ME，该版的ME是v11.8.50.3425不支持在100系主板上用CFL处理器，据说识别CFL后ME会让主板自动断电关机；
-    而7.20版BIOS的ME固件是v11.6.0.1126就不会有上面的问题。解锁ME教程请跳转wiki--04 ME unlock降级。
+    如果你的bios是7.30版还需要解锁ME，该版的ME是v11.8.50.3425不支持在100系主板上用CFL处理器，
+    据说识别CFL后ME会让主板自动断电关机；而7.20版BIOS的ME固件是v11.6.0.1126就不会有上面的问题。
+    解锁ME教程请跳转wiki--04 ME unlock降级。
 
 
 具体操作步骤：
