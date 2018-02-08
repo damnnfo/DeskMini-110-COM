@@ -1,16 +1,22 @@
 因为我自己用deskmini，就动手改了7.2版的bios（支持Cfl处理器和核显），
-已刷机测试可以正常启动进系统（我用的是i3-7100，吧友用8100也测试过了），如有风险请自行承担。
+已刷机测试可以正常启动进系统，如有风险请自行承担。
 https://pan.baidu.com/s/1c2JHlc8
+
+大众教程：下载修改好的BIOS，解压缩放到U盘，开机进BIOS确认BIOS版本，7.2或以下版本直接用instant flash刷带np（去除安全校验）的ROM即可；
+         7.3或更高版本的，请按wiki--04 ME unlock降级解锁ME，再用instant flash刷带np（去除安全校验）的ROM。
+
+
+下面是给想知道改了哪些地方，怎么修改的，为什么这样操作的同学看的。
 
 操作流程简述：
 
 如果你的bios是7.20或7.20以下，请先升级至7.20版，备份好自己的BIOS设置后恢复出厂设置；
-再用AFUWIN备份主板的BIOS region，接着用MMTool或UEFITool打开添加CFL处理器微码，替换1073版GOP、1054版VBIOS后保存ROM；
+再用AFUWIN备份主板的BIOS region，接着用MMTool或UEFITool打开添加CFL处理器微码，替换1074版GOP、1054版VBIOS后保存ROM；
 然后用AFUWIN刷修改后的ROM即可，这样是相当安全的操作（只动到BIOS region）。
 
 
-如果你的bios是7.30版还需要解锁ME，7.30版的ME是11.8.50.3425不支持在100系主板上用CFL处理器，据说识别CFL后ME会让主板自动断电关机，
-而7.20版的ME固件是11.6.0.1126就不会有上面的问题。解锁ME教程请跳转wiki--04 ME unlock降级。
+如果你的bios是7.30版还需要解锁ME，该版的ME是v11.8.50.3425不支持在100系主板上用CFL处理器，据说识别CFL后ME会让主板自动断电关机；
+而7.20版BIOS的ME固件是v11.6.0.1126就不会有上面的问题。解锁ME教程请跳转wiki--04 ME unlock降级。
 
 
 具体操作步骤：
@@ -26,6 +32,4 @@ C）用UEFITool打开H11STXC7.20mod.rom，Ctrl+F搜索GUID（380B6B4F-1454-41F2-
    
 至此完成H110主板对Cfl处理器的识别、核显支持的BIOS修改操作。
 
-接着用AFUWIN刷修改好的BIOS，AFUWIN里不要选自动重启、万一操作出错还能补救；
-
-如果用InstantFlash刷修改过的BIOS ROM，需要先用UBU 1.6工具运行UBU.bat自动去除安全校验才可以。
+接着用AFUWIN刷修改好的BIOS，AFUWIN里不要选自动重启、万一操作出错还能补救。
