@@ -21,7 +21,7 @@ https://pan.baidu.com/s/1c2JHlc8
     解锁ME教程请跳转wiki--04 ME unlock降级。
 
 
-具体操作步骤：
+操作步骤简述：
 
     A）用MMTool修改处理器微码，详细见wiki--02 修改处理器微码，添加对CFL处理器的支持
 
