@@ -8,7 +8,7 @@ https://pan.baidu.com/s/1c2JHlc8
     7.3或更高版本的，请按wiki--04 ME unlock降级解锁ME，再用instant flash刷带np（去除安全校验）的ROM。
 
 
-下面是给想知道改了哪些地方，怎么修改的，为什么这样操作的同学看的。
+进阶教程：
 
 操作流程简述：
 
@@ -34,5 +34,5 @@ https://pan.baidu.com/s/1c2JHlc8
    
        至此完成H110主板对Cfl处理器的识别、核显支持的BIOS修改操作。
 
-    D) 接着用AFUWIN刷修改好的BIOS，AFUWIN里不要选自动重启、万一操作出错还能补救。
-       非华擎主板碰到AFU不能刷的，可以尝试用Intel Flash Programming Tool（网盘里有分享）
+    D) 最后用AFUWIN刷修改好的BIOS，AFUWIN里不要选自动重启、万一操作出错还能补救。
+       非华擎主板碰到AFU不能刷的，可以尝试用Intel Flash Programming Tool（网盘里有分享）。
