@@ -13,7 +13,7 @@
        国行是COM版，基本上BIOS芯片都是焊在主板上的，要用编程器（推荐SkyGz）的可以买编程器夹子（宽体），
        用编程器就不需要6代或7代亮机U了。
     
-    B) 用MMTool_5.02.0024修改处理器微码，详细见“wiki--02 修改处理器微码”，添加对CFL处理器的支持
+    B）用MMTool_5.02.0024修改处理器微码，详细见“wiki--02 修改处理器微码”，添加对CFL处理器的支持
 
     C）按“wiki--03 合成新版VBIOS”来生成1054版的VBIOS，另存为vbios1054.bin
 
@@ -25,14 +25,14 @@
    
        至此完成H110主板对Cfl处理器的识别、核显支持的BIOS修改操作。
        
-    E) 可选；7.20或以下版本BIOS的请跳过该步。
+    E）可选；7.20或以下版本BIOS的请跳过该步。
        如果你的bios是7.30版则需要解锁ME，该版的ME是v11.8.50.3425不支持在100系主板上用CFL处理器，
        识别CFL后ME会让主板自动断电关机；而7.20版BIOS的ME固件是v11.6.0.1126就不会有这样的问题。
        解锁ME教程请跳转“wiki--04 ME unlock降级”。
        
        想继续用7.30版BIOS的，可以提取7.20版BIOS的ME替换到该版BIOS，按上面步骤生成7.30的修改版BIOS。
 
-    F) 最后用AFUWIN刷修改好的BIOS，AFUWIN里不要选自动重启、万一操作出错还能补救。
+    F）最后用AFUWIN刷修改好的BIOS，AFUWIN里不要选自动重启、万一操作出错还能补救。
        想用instant flash更新BIOS的，请用UBU工具去除安全校验：将BIOS ROM放到UBU目录下、运行UBU.bat即可。
        非华擎主板碰到AFU不能刷的，可以尝试用Intel Flash Programming Tool（网盘里有分享），
        强烈建议先用FPT备份好BIOS ROM再操作。
