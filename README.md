@@ -1,4 +1,4 @@
-因为我自己用deskmini，就动手改了7.2版的bios（支持Cfl处理器和核显），
+因为我自己用deskmini，就动手改了7.2版的bios（支持Cfl i3处理器和核显），
 已刷机测试可以正常启动进系统，如有风险请自行承担。
 https://pan.baidu.com/s/1c2JHlc8
 
