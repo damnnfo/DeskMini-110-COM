@@ -9,6 +9,11 @@
     接着按7.20版的教程刷修改好的7.20 BIOS也可以。
 
 
+已确认，从gop 9.0.1040 & vbios 9.0.1034开始支持kabylake；
+
+通过几款Z370的初版bios解析，猜测从gop 9.0.1068 & vbios 9.0.1054开始支持coffeelake，但Z370 vbios的平台还是skl/kbl；
+
+而最新的H310和B360的vbios是真正cfl平台的。
 
 
 
