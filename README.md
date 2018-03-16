@@ -37,5 +37,5 @@
        非华擎主板碰到AFU不能刷的，可以尝试用Intel Flash Programming Tool（网盘里有分享），
        强烈建议先用FPT备份好BIOS ROM再操作。
        
-    2018-3-16 Remark：根据ftp://asrock.cn/BIOS/1151/H310M-STX(L0.99)ROM.zip ，H310M-STX也在路上了。    
+   2018-3-16 Remark：根据ftp://asrock.cn/BIOS/1151/H310M-STX(L0.99)ROM.zip ，H310M-STX也在路上了。    
        
