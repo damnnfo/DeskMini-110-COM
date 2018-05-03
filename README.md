@@ -10,9 +10,9 @@
 
 
 补充：
-已确认，从gop 9.0.1040 & vbios 9.0.1034开始支持kabylake；
+从gop 9.0.1040 & vbios 9.0.1034开始支持kabylake；
 
-通过几款Z370的初版bios解析，猜测从gop 9.0.1068 & vbios 9.0.1054开始支持coffeelake。
+GOP SKL < v1039, SKL-KBL < v1062, SKL-CFL > v1063。
 
 2018-3-31更新，目前H110上i7 8700等必须先关闭超线程才能点亮，i5 8400或8500不需要，当然pin mod都是必需的。
 
