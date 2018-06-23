@@ -2,7 +2,7 @@
 
 百度网盘分享https://pan.baidu.com/s/1c2JHlc8 ，如有风险请自行承担！
 
-大众教程：下载修改好的BIOS，解压缩放到U盘，开机进BIOS确认BIOS版本，
+大众教程：下载修改好的BIOS "H11STXC7.60np+me116+vbios1058+gop1079.7z"，解压缩放到U盘（FAT32格式），接着重启进BIOS查看BIOS版本，
 
     7.20或以下版本直接用instant flash刷带np（去除安全校验）的ROM即可；
     7.30或更高版本的，请按“wiki--04 ME unlock降级”解锁ME，再用instant flash刷带np（去除安全校验）的ROM。
