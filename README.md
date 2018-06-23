@@ -1,6 +1,6 @@
 因为我自己用deskmini，就动手改了7.2版的bios（支持Cfl i3处理器Revision B0和核显），已刷机测试可以正常使用等。
 
-注意：不能直接更新官方新版的BIOS，因为会更新ME导致不能开机！
+注意：不能直接更新官方新版的BIOS，因为会更新ME等导致不能开机！
 
 百度网盘分享https://pan.baidu.com/s/1c2JHlc8 ，如有风险请自行承担！
 
@@ -43,5 +43,7 @@
        非华擎主板碰到AFU不能刷的，可以尝试用Intel Flash Programming Tool（网盘里有分享），
        强烈建议先用FPT备份好BIOS ROM再操作。
        
-   2018-6-23 Remark：华擎天猫店开卖DeskMini 310/COM了，目前价格￥1299还是稍贵。此外DeskMini 110/COM也基于最新的7.60版更新了。    
+   2018-6-23 Remark：华擎天猫店开卖DeskMini 310/COM了，目前价格￥1299还是稍贵。
+   
+   此外DeskMini 110/COM也基于最新的7.60版修改更新了。    
        
