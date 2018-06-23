@@ -1,4 +1,5 @@
-因为我自己用deskmini，就动手改了7.2版的bios（支持Cfl i3处理器Revision B0和核显），已刷机测试可以正常启动进系统等。
+因为我自己用deskmini，就动手改了7.2版的bios（支持Cfl i3处理器Revision B0和核显），已刷机测试可以正常使用等。
+注意：不能直接更新官方新版的BIOS，因为会更新ME导致不能开机！
 
 百度网盘分享https://pan.baidu.com/s/1c2JHlc8 ，如有风险请自行承担！
 
@@ -6,6 +7,10 @@
 
     7.20或以下版本直接用instant flash刷带np（去除安全校验）的ROM即可；
     7.30或更高版本的，请按“wiki--04 ME unlock降级”解锁ME，再用instant flash刷带np（去除安全校验）的ROM。
+    
+请用同一批次的品牌内存条组双通道，我自己用JD买的金士顿骇客神条（1号机）和天猫买的Apacer（2号机），核显驱动用Win10自动更新安装的；
+至今还未遇到死机或花屏等问题！此外不要使用Win7系统，因为没有对应的8代核显驱动等。
+
 
 进阶教程，操作流程简述：
 
@@ -37,5 +42,5 @@
        非华擎主板碰到AFU不能刷的，可以尝试用Intel Flash Programming Tool（网盘里有分享），
        强烈建议先用FPT备份好BIOS ROM再操作。
        
-   2018-6-23 Remark：华擎天猫店开卖DeskMini 310/COM，目前价格￥1299还是稍贵。此外DeskMini 110/COM也基于最新的7.60版更新了。    
+   2018-6-23 Remark：华擎天猫店开卖DeskMini 310/COM了，目前价格￥1299还是稍贵。此外DeskMini 110/COM也基于最新的7.60版更新了。    
        
