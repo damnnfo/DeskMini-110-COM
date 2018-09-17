@@ -4,7 +4,7 @@
 
 百度网盘分享https://pan.baidu.com/s/1c2JHlc8 ，如有风险请自行承担！
 
-大众教程：下载修改好的BIOS "H11STXC7.60np+me116+vbios1058+gop1079.7z"，解压缩放到U盘（FAT32格式），接着重启进BIOS查看BIOS版本：
+大众教程：下载修改好的BIOS "H11STXC7.80np+me116+vbios1059+gop1080.7z"，解压缩放到U盘（FAT32格式），接着重启进BIOS查看BIOS版本：
 
     7.20或以下版本直接用instant flash刷带np（去除安全校验）的ROM即可；
     7.30或更高版本的，请按“wiki--04 ME unlock降级”解锁ME，再用instant flash刷带np（去除安全校验）的ROM。
@@ -45,5 +45,5 @@
        
    2018-6-23 Remark：华擎天猫店开卖DeskMini 310/COM了，目前价格￥1299还是稍贵。
    
-   此外DeskMini 110/COM也基于最新的7.60版修改更新了。    
+   2018-9-17 DeskMini 110/COM基于最新的7.80版修改，已刷机测试。    
        
