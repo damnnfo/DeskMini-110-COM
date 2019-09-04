@@ -2,7 +2,7 @@
 
 注意：不能直接更新官方新版的BIOS，因为会更新ME等导致不能开机！
 
-百度网盘分享https://pan.baidu.com/s/1c2JHlc8 ，如有风险请自行承担！
+百度网盘分享链接: https://pan.baidu.com/s/1PEAFnEw2K7jIWNGFcY7uBA 提取码: g3ju ，如有风险请自行承担！
 
 大众教程：下载修改好的BIOS "H11STXC7.90np+me116+vbios1062+gop1080.7z"，解压缩放到U盘（FAT32格式），接着重启进BIOS查看BIOS版本：
 
